@@ -1,0 +1,101 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   patternMatching.scala
+
+import scala.*;
+import scala.collection.mutable.ListBuffer;
+import scala.runtime.BoxedUnit;
+
+public final class patternMatching$
+    implements App
+{
+
+    public long executionStart()
+    {
+        return executionStart;
+    }
+
+    public String[] scala$App$$_args()
+    {
+        return scala$App$$_args;
+    }
+
+    public void scala$App$$_args_$eq(String x$1[])
+    {
+        scala$App$$_args = x$1;
+    }
+
+    public ListBuffer scala$App$$initCode()
+    {
+        return scala$App$$initCode;
+    }
+
+    public void scala$App$_setter_$executionStart_$eq(long x$1)
+    {
+        executionStart = x$1;
+    }
+
+    public void scala$App$_setter_$scala$App$$initCode_$eq(ListBuffer x$1)
+    {
+        scala$App$$initCode = x$1;
+    }
+
+    public String[] args()
+    {
+        return scala.App.class.args(this);
+    }
+
+    /**
+     * @deprecated Method delayedInit is deprecated
+     */
+
+    public void delayedInit(Function0 body)
+    {
+        scala.App.class.delayedInit(this, body);
+    }
+
+    public void main(String args[])
+    {
+        scala.App.class.main(this, args);
+    }
+
+    public patternMatching.A a()
+    {
+        return a;
+    }
+
+    public final void delayedEndpoint$patternMatching$1()
+    {
+        a = new patternMatching.A(1, "hello world");
+        patternMatching.A a1 = a();
+        Option option = patternMatching.A..MODULE$.unapply(a1);
+        if(option.isEmpty())
+        {
+            Predef$.MODULE$.println("_");
+            BoxedUnit boxedunit = BoxedUnit.UNIT;
+        } else
+        {
+            String y = (String)((Tuple2)option.get())._2();
+            Predef$.MODULE$.println(y);
+            BoxedUnit boxedunit1 = BoxedUnit.UNIT;
+        }
+    }
+
+    private patternMatching$()
+    {
+        scala.App.class.$init$(this);
+        delayedInit(new patternMatching.delayedInit.body(this));
+    }
+
+    public static final patternMatching$ MODULE$ = this;
+    private final patternMatching.A a;
+    private final long executionStart;
+    private String scala$App$$_args[];
+    private final ListBuffer scala$App$$initCode;
+
+    static 
+    {
+        new patternMatching$();
+    }
+}

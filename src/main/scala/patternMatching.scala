@@ -5,6 +5,7 @@ object patternMatching extends App {
   object A {
     def unapply(a: A): Option[(Int,String)] = Some(a.x,a.y)
   }
+
   val a = new A(1,"hello world")
   a match {
     case  A(x,y) => println(y)

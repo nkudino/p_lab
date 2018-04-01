@@ -1,0 +1,41 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   C3.scala
+
+
+public class C3$A
+{
+
+    public int x()
+    {
+        return x;
+    }
+
+    public void x_$eq(int x$1)
+    {
+        x = x$1;
+    }
+
+    public C3 C3$A$$$outer()
+    {
+        return $outer;
+    }
+
+    private int x;
+    public final C3 $outer;
+
+    public C3$A(C3 $outer, int x)
+    {
+        this.x = x;
+        if($outer == null)
+        {
+            throw null;
+        } else
+        {
+            this.$outer = $outer;
+            super();
+            return;
+        }
+    }
+}

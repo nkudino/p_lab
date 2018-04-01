@@ -1,0 +1,36 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   C2.scala
+
+
+public class C2$A
+{
+
+    public int x()
+    {
+        return x;
+    }
+
+    public C2 C2$A$$$outer()
+    {
+        return $outer;
+    }
+
+    private final int x;
+    public final C2 $outer;
+
+    public C2$A(C2 $outer, int x)
+    {
+        this.x = x;
+        if($outer == null)
+        {
+            throw null;
+        } else
+        {
+            this.$outer = $outer;
+            super();
+            return;
+        }
+    }
+}

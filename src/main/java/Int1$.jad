@@ -5,7 +5,9 @@
 
 import scala.*;
 import scala.collection.mutable.ListBuffer;
+import scala.collection.mutable.StringBuilder;
 import scala.runtime.BoxesRunTime;
+import scala.runtime.RichInt$;
 
 public final class Int1$
     implements App
@@ -65,7 +67,7 @@ public final class Int1$
         return x;
     }
 
-    public int y()
+    public String y()
     {
         return y;
     }
@@ -78,9 +80,9 @@ public final class Int1$
     public final void delayedEndpoint$Int1$1()
     {
         x = 10;
-        y = 11;
-        z = BoxesRunTime.boxToInteger(y()).hashCode();
-        Predef$.MODULE$.println(BoxesRunTime.boxToInteger(x() + y()));
+        y = RichInt$.MODULE$.toBinaryString$extension(Predef$.MODULE$.intWrapper(x()));
+        z = BoxesRunTime.boxToInteger(x()).hashCode();
+        Predef$.MODULE$.println((new StringBuilder()).append(y()).append(":").append(BoxesRunTime.boxToInteger(x())).append(":").append(BoxesRunTime.boxToInteger(z())).toString());
     }
 
     private Int1$()
@@ -91,7 +93,7 @@ public final class Int1$
 
     public static final Int1$ MODULE$ = this;
     private final int x;
-    private final int y;
+    private final String y;
     private final int z;
     private final long executionStart;
     private String scala$App$$_args[];

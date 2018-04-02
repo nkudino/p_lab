@@ -1,0 +1,104 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   Int1.scala
+
+import scala.*;
+import scala.collection.mutable.ListBuffer;
+import scala.runtime.BoxesRunTime;
+
+public final class Int1$
+    implements App
+{
+
+    public long executionStart()
+    {
+        return executionStart;
+    }
+
+    public String[] scala$App$$_args()
+    {
+        return scala$App$$_args;
+    }
+
+    public void scala$App$$_args_$eq(String x$1[])
+    {
+        scala$App$$_args = x$1;
+    }
+
+    public ListBuffer scala$App$$initCode()
+    {
+        return scala$App$$initCode;
+    }
+
+    public void scala$App$_setter_$executionStart_$eq(long x$1)
+    {
+        executionStart = x$1;
+    }
+
+    public void scala$App$_setter_$scala$App$$initCode_$eq(ListBuffer x$1)
+    {
+        scala$App$$initCode = x$1;
+    }
+
+    public String[] args()
+    {
+        return scala.App.class.args(this);
+    }
+
+    /**
+     * @deprecated Method delayedInit is deprecated
+     */
+
+    public void delayedInit(Function0 body)
+    {
+        scala.App.class.delayedInit(this, body);
+    }
+
+    public void main(String args[])
+    {
+        scala.App.class.main(this, args);
+    }
+
+    public int x()
+    {
+        return x;
+    }
+
+    public int y()
+    {
+        return y;
+    }
+
+    public int z()
+    {
+        return z;
+    }
+
+    public final void delayedEndpoint$Int1$1()
+    {
+        x = 10;
+        y = 11;
+        z = BoxesRunTime.boxToInteger(y()).hashCode();
+        Predef$.MODULE$.println(BoxesRunTime.boxToInteger(x() + y()));
+    }
+
+    private Int1$()
+    {
+        scala.App.class.$init$(this);
+        delayedInit(new Int1.delayedInit.body(this));
+    }
+
+    public static final Int1$ MODULE$ = this;
+    private final int x;
+    private final int y;
+    private final int z;
+    private final long executionStart;
+    private String scala$App$$_args[];
+    private final ListBuffer scala$App$$initCode;
+
+    static 
+    {
+        new Int1$();
+    }
+}

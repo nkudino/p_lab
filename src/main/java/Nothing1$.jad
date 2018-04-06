@@ -1,0 +1,28 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   Nothing1.scala
+
+import scala.Predef$;
+
+public final class Nothing1$
+{
+
+    public void main(String args[])
+    {
+        scala.runtime.Nothing$ x = Predef$.MODULE$.$qmark$qmark$qmark();
+        Predef$.MODULE$;
+        throw x;
+    }
+
+    private Nothing1$()
+    {
+    }
+
+    public static final Nothing1$ MODULE$ = this;
+
+    static 
+    {
+        new Nothing1$();
+    }
+}
